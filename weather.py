@@ -5,7 +5,9 @@ from time import sleep
 
 city = 'Huttwil,ch' #input('Enter your City: ')
 
-url = 'http://api.openweathermap.org/data/2.5/weather?q={}&units=metric&mode=json&APPID=0368e81d5eeae2f5dc7f690f3efc6dbd'.format(city)
+API_KEY = 'your OpenWeather API key'
+
+url = 'http://api.openweathermap.org/data/2.5/weather?q={}&units=metric&mode=json&APPID={}'.format(city, API_KEY)
 
 res = requests.get(url)
 
